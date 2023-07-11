@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+.container-vertical {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}

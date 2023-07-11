@@ -1,0 +1,38 @@
+.wrapper-currated-picks {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(1, 250px);
+  gap: 1rem;
+}
+
+.wrapper-currated-picks .pick-item {
+  background-color: aquamarine;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  padding: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.pick-item.best-seller {
+  background-image: url("../images/lisa.jpg");
+}
+.pick-item.shop-man {
+  background-image: url("../images/jennie.jpg");
+}
+.pick-item.shop-woman {
+  background-image: url("../images/lisa.jpg");
+}
+.pick-item.shop-casual {
+  background-image: url("../images/jennie.jpg");
+}
+
+.wrapper-currated-picks .pick-item .box-inside {
+  padding: 0.8rem;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
