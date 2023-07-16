@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link rel="stylesheet" href="./styles/profile.css">
+</head>
+<body>
+  <h1>Profile</h1>
+
+  <div style="display: flex; flex-direction: column;">
+    <label for="displayName">Display Name</label>
+    <input id="displayName" type="text">
+    <label for="email">Email:</label>
+    <span id="email"></span>
+    <label for="phoneNumber">Phone number</label>
+    <input id="phoneNumber" type="text">
+
+    <label for="photoURL">Photo URL</label>
+    <input id="photoURL" type="file">
+    <img id="photo-preview" src="" alt="">
+    <button id="update-btn">Update</button>
+  </div>
+
+  <script type="module" src="./firebase/profile.js"></script>
+</body>
+</html>

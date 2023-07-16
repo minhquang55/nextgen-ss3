@@ -4,6 +4,7 @@ import { auth } from "./config.js";
 export const checkLoginStatus = () => {
   onAuthStateChanged(auth, (user) => {
     if (user) {
+      console.log(user.providerData[0]);
       if (
         location.pathname === "/login.html" ||
         location.pathname === "/register.html"
