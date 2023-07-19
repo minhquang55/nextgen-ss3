@@ -4,6 +4,11 @@ header {
   justify-content: flex-end;
 }
 
+.bi-cart-check {
+  font-size: 25px;
+  color: blueviolet;
+}
+
 #welcome-text {
   margin-right: 20px;
 }
@@ -45,4 +50,30 @@ header {
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
+}
+
+.wrapper-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.product-item {
+  width: 30%;
+  height: 200px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url("https://i.dummyjson.com/data/products/1/thumbnail.jpg");
+  background-size: cover;
+}
+
+.product-name {
+  color: aliceblue;
+}
+
+.product-price {
+  color: aliceblue;
 }
