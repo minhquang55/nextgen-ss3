@@ -1,15 +1,17 @@
-import { getAuth } from 'https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js'
+import { getAuth } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js";
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js";
+import { getFirestore } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCMDNXLDqAcThwnli66p67vAI1rNf78Bjg",
-  authDomain: "nextgen-auth.firebaseapp.com",
-  projectId: "nextgen-auth",
-  storageBucket: "nextgen-auth.appspot.com",
-  messagingSenderId: "178501679598",
-  appId: "1:178501679598:web:4036f4cd7bf3a8dd7f76ff",
-  measurementId: "G-YHQ7BEF416",
+  apiKey: "AIzaSyBNDFkdOrJiCDR0W-JjDccHnbaKB62R1Pg",
+  authDomain: "authen-firebase-js.firebaseapp.com",
+  projectId: "authen-firebase-js",
+  storageBucket: "authen-firebase-js.appspot.com",
+  messagingSenderId: "839258110224",
+  appId: "1:839258110224:web:2d7a02fb582ba575438d95",
+  measurementId: "G-GP8JGJEJVM",
 };
 
 const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app)
+export const db = getFirestore(app);
+export const auth = getAuth(app);

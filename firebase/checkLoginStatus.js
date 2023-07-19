@@ -4,12 +4,11 @@ import { auth } from "./config.js";
 export const checkLoginStatus = () => {
   onAuthStateChanged(auth, (user) => {
     if (user) {
-      console.log(user.providerData[0]);
       if (
         location.pathname === "/login.html" ||
         location.pathname === "/register.html"
       ) {
-        window.location.replace("index.html");
+        // window.location.replace("index.html");
       } else if (location.pathname === "/index.html") {
         const authBtn = document.getElementById("auth-btn");
         authBtn.textContent = "Logout";
