@@ -1,0 +1,26 @@
+.messages {
+  height: 500px;
+  margin: 20px 0;
+  border: 2px solid grey;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.my-message {
+  align-self: flex-end;
+}
+
+.message {
+  max-width: 80%;
+  margin-bottom: 10px;
+}
+
+.message span {
+  word-break: break-word;
+  white-space: break-spaces;
+  text-align: left;
+  line-height: 15px;
+  font-size: 13px;
+}
