@@ -11,4 +11,5 @@ body {
 .container-vertical {
   padding-top: 1rem;
   padding-bottom: 1rem;
+  margin-bottom: 500px;
 }
